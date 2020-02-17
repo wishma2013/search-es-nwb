@@ -13,14 +13,10 @@ import {
     HierarchicalMenuFilter,
     Pagination,
     ResetFilters,
-
     SearchkitManager,
-    SearchkitProvider
-} from 'searchkit';
+    SearchkitProvider} from 'searchkit';
 
-const sk = new SearchkitManager("https://kili-eu-west-1.searchly.com/movies/", {
-    basicAuth:"read:teetndhjnrspbzxxyfxmf5fb24suqxuj"
-})
+const sk = new SearchkitManager("http://localhost:9200")
 
 class App extends Component {
 
